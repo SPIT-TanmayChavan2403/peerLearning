@@ -42,6 +42,4 @@ testem.log
 Thumbs.db
 
 # Firebase secret file
-.firebase/
-.firebaserc
 /build
