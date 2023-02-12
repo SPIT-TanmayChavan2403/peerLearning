@@ -1,0 +1,22 @@
+name: Workflow to deploy project on firebase
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  firebase-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with:
+          node-version: "16.x"
+      - run: npm install
+      - run: npm run build
+      - name: Deploy to firebase
+        uses: w9jds/firebase-action@master
+        with:
+          args: firebase deploy --token 1//0gH970AtNz5VxCgYIARAAGBASNgF-L9Irelb_rrjIQNKuL48nvwBZbanxqTCxWDkGRB_0gbUKJpTDZ-Eh0FmgUSf9IuhCc42iNw
