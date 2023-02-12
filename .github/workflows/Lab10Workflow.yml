@@ -19,4 +19,4 @@ jobs:
       - name: Deploy to firebase
         uses: w9jds/firebase-action@master
         with:
-          args: firebase deploy --token "1//0gH970AtNz5VxCgYIARAAGBASNgF-L9Irelb_rrjIQNKuL48nvwBZbanxqTCxWDkGRB_0gbUKJpTDZ-Eh0FmgUSf9IuhCc42iNw"
+          args: firebase deploy --token 1//0gH970AtNz5VxCgYIARAAGBASNgF-L9Irelb_rrjIQNKuL48nvwBZbanxqTCxWDkGRB_0gbUKJpTDZ-Eh0FmgUSf9IuhCc42iNw
