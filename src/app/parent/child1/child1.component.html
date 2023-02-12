@@ -1,0 +1,8 @@
+<div id="child1">
+    <h1> Child 1</h1>
+    <h2> {{name}} </h2>
+    <div>
+        <input type="text" #surname placeholder="Enter your surname: ">
+        <button (click)="sendCompleteName(surname.value)">Send</button>
+    </div>
+</div>

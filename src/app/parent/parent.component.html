@@ -1,0 +1,9 @@
+<div id="parent">
+    <h1 style="text-align: center;width: 100%;">Parent</h1>
+    <div id="input">
+        <input type="text" #firstname placeholder="Type your name">
+        <button (click)="sendAuthorName(firstname.value)" >Send</button>
+    </div>
+    <app-child1 [name]="name" ></app-child1>
+    <app-child2></app-child2>
+</div>
